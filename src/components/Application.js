@@ -1,8 +1,8 @@
 import React from "react";
+import axios from "axios";
 import "components/Application.scss";
 import DayList from "../components/DayList";
-import { useState } from "react";
-
+import { useState, useEffect } from "react";
 import Appointment from "components/Appointment/index";
 
 const appointments = [
