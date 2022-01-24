@@ -9,7 +9,7 @@ export default function DayList(props){
       {...weekday}
       key={weekday.id}
       selected={weekday.name === props.value}
-      setDay={() => props.onChange(weekday.name)} />
+      setDay={() => props.setDay(weekday.name)} />
   );
 
   return(
