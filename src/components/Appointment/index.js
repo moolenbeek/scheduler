@@ -9,7 +9,7 @@ import Show from "./Show"
 import Empty from "./Empty"
 
 export default function Appointment(props){
-  console.log(props.interview)
+  // console.log(props.interview)
   return(
     <Fragment>
       <Header time={props.time} />
