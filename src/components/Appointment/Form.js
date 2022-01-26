@@ -6,6 +6,7 @@ import InterviewerList from "../InterviewerList";
 import Button from "../Button";
 
 export default function Form(props){
+  console.log('formprops', props)
   const [student, setStudent] = useState(props.student || "");
   const [interviewer, setInterviewer] = useState(props.interviewer || null);
 
@@ -26,6 +27,7 @@ export default function Form(props){
           <input
             className="appointment__create-input text--semi-bold"
             name="name"
+            value={student}
             type="text"
             placeholder="Enter Student Name"
             onChange={(event) => setStudent(event.target.value)}
