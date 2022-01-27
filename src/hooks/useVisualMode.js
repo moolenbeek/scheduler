@@ -13,17 +13,6 @@ export default function useVisualMode(initial) {
     } else {
       setHistory((prev) => [...prev, newMode])
     }
-
-
-    // if (newMode !== mode) {
-    //   setMode(newMode);
-
-    //   (replace
-    //     ? history[history.length - 1] = newMode
-    //     : history.push(newMode)
-    //   );
-    //   setHistory([ ...history ]);
-    // }
   }
 
   function back() {
@@ -31,10 +20,6 @@ export default function useVisualMode(initial) {
 
       setMode(history[history.length - 2]);
       setHistory((prev) => [...prev.slice(0, prev.length -1)])
-      
-      // history.pop();
-      // setMode(history[history.length - 1]);
-      // setHistory([ ...history ]);
     }
   }
 
