@@ -40,6 +40,10 @@ export default function Appointment(props){
     .catch((e) => console.log(e))
   }
 
+  function edit() {
+    transition(EDIT);
+  }
+
   function deleting () {
     transition(DELETING)
     props.deleteInterview(props.id)
@@ -56,7 +60,7 @@ export default function Appointment(props){
         <Show
           student={props.interview.student}
           interviewer={selectedInterviewer}
-          onEdit={() => transition(EDIT)}
+          onEdit={edit}
           onDelete={() => transition(CONFIRM)}
         />
       )}
