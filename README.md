@@ -21,3 +21,5 @@ npm test
 ```sh
 npm run storybook
 ```
+## Screenshot of project
+![Screenshot of Creating New Appointment](https://github.com/moolenbeek/scheduler/blob/master/assets/images/schedulerNewAppointment.png)
