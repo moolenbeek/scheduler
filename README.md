@@ -21,5 +21,9 @@ npm test
 ```sh
 npm run storybook
 ```
-## Screenshot of project
-![Screenshot of Creating New Appointment](https://github.com/moolenbeek/scheduler/blob/master/assets/images/schedulerNewAppointment.png)
+## Screenshot of project and react components
+![Screenshot of Project](https://github.com/moolenbeek/scheduler/blob/master/assets/images/schedulerNewAppointment.png)
+![Add Appointment Component](https://github.com/moolenbeek/scheduler/blob/master/assets/images/add.png)
+![Confirm Component](https://github.com/moolenbeek/scheduler/blob/master/assets/images/confirm.png)
+![Delete Component](https://github.com/moolenbeek/scheduler/blob/master/assets/images/deleting.png)
+![Day List Component](https://github.com/moolenbeek/scheduler/blob/master/assets/images/days.png)
