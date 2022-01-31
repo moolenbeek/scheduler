@@ -22,8 +22,6 @@ export default function useApplicationData() {
 
   const setDay = day => setState({ ...state, day });
 
-  console.log('days +++++', state.days)
-
   function updateSpots (actionType) {
     const days = state.days.map(day => {
       if (day.name === state.day) {
