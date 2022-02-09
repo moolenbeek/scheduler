@@ -1,4 +1,7 @@
 # Interview Scheduler
+Interview Scheduler is a React application with a concise API and WebSocket server that allows users to book and cancel interviews.
+
+![Screenshot of Project](https://github.com/moolenbeek/scheduler/blob/master/assets/images/schedulerNewAppointment.png)
 
 ## Setup
 
@@ -31,9 +34,15 @@ npm test
 npm run storybook
 ```
 
-## Screenshot of project and react components
-![Screenshot of Project](https://github.com/moolenbeek/scheduler/blob/master/assets/images/schedulerNewAppointment.png)
+## React Components
+Add Appointment
 ![Add Appointment Component](https://github.com/moolenbeek/scheduler/blob/master/assets/images/add.png)
+
+Confirm Appointment
 ![Confirm Component](https://github.com/moolenbeek/scheduler/blob/master/assets/images/confirm.png)
+
+Delete Appointment
 ![Delete Component](https://github.com/moolenbeek/scheduler/blob/master/assets/images/deleting.png)
+
+Day List Component
 ![Day List Component](https://github.com/moolenbeek/scheduler/blob/master/assets/images/days.png)
