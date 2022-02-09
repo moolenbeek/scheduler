@@ -21,6 +21,16 @@ npm test
 ```sh
 npm run storybook
 ```
+## Dependencies
+* axios
+* classnames
+* fsevents
+* normalize.css
+* react
+* react-dom
+* react-scripts
+
+
 ## Screenshot of project and react components
 ![Screenshot of Project](https://github.com/moolenbeek/scheduler/blob/master/assets/images/schedulerNewAppointment.png)
 ![Add Appointment Component](https://github.com/moolenbeek/scheduler/blob/master/assets/images/add.png)
