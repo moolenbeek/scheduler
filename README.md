@@ -56,5 +56,5 @@ Confirm Appointment
 Delete Appointment
 ![Delete Component](https://github.com/moolenbeek/scheduler/blob/master/assets/images/deleting.png)
 
-Day List Component
+Day List
 ![Day List Component](https://github.com/moolenbeek/scheduler/blob/master/assets/images/days.png)
