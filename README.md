@@ -4,6 +4,15 @@
 
 Install dependencies with `npm install`.
 
+### Dependencies
+* axios
+* classnames
+* fsevents
+* normalize.css
+* react
+* react-dom
+* react-scripts
+
 ## Running Webpack Development Server
 
 ```sh
@@ -21,15 +30,6 @@ npm test
 ```sh
 npm run storybook
 ```
-## Dependencies
-* axios
-* classnames
-* fsevents
-* normalize.css
-* react
-* react-dom
-* react-scripts
-
 
 ## Screenshot of project and react components
 ![Screenshot of Project](https://github.com/moolenbeek/scheduler/blob/master/assets/images/schedulerNewAppointment.png)
