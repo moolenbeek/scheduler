@@ -3,6 +3,15 @@ Interview Scheduler is a React application with a concise API and WebSocket serv
 
 ![Screenshot of Project](https://github.com/moolenbeek/scheduler/blob/master/assets/images/schedulerNewAppointment.png)
 
+## Table of contents
+* [Setup](#Setup)
+* [Dependencies](#Dependencies)
+* [Schduler API](#Schduler-API)
+* [Running Webpack Development Server](#Running-Webpack-Development-Server)
+* [Running Jest Test Framework](#Running-Jest-Test-Framework)
+* [Running Storybook Visual Testbed](#Running-Storybook-Visual-Testbed)
+* [React Components](#React-Components)
+
 ## Setup
 
 Install dependencies with `npm install`.
@@ -15,6 +24,9 @@ Install dependencies with `npm install`.
 * react
 * react-dom
 * react-scripts
+
+## Schduler API
+https://github.com/lighthouse-labs/scheduler-api
 
 ## Running Webpack Development Server
 
