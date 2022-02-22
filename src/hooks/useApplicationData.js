@@ -22,19 +22,17 @@ export default function useApplicationData() {
 
   const setDay = day => setState({ ...state, day });
 
-  function updateSpots (actionType) {
-    const days = state.days.map(day => {
-      if (day.name === state.day) {
-        if (actionType === "bookAppointment") {
-          return { ...day, spots: day.spots - 1 }
-        } else {
-          return { ...day, spots: day.spots + 1 }
+  function updateSpots (newAppointments) {
+    const updatedSpotsDays = state.days.map(day => {
+      let freeSpots = 0;
+      for (const appointmentID of day.appointments) {
+        if (!newAppointments[appointmentID].interview) {
+          freeSpots++
         }
-      } else {
-        return { ...day };
       }
+      return {...day, spots: freeSpots}
     })
-    return days;
+    return updatedSpotsDays;
   }
   
   function bookInterview(id, interview) {
@@ -48,10 +46,11 @@ export default function useApplicationData() {
       ...state.appointments,
       [id]: appointment
     };
+
+    const days = updateSpots(appointments)
     
     return axios.put(`/api/appointments/${appointment.id}`, {interview})
     .then(response => {
-      const days = updateSpots("bookAppointment")
       setState({
         ...state,
         appointments,
@@ -73,9 +72,10 @@ export default function useApplicationData() {
       [id]: appointment
     };
 
+    const days = updateSpots(appointments)
+
     return axios.delete(`/api/appointments/${id}`)
     .then(response => {
-      const days = updateSpots()
       setState({
         ...state,
         appointments,
